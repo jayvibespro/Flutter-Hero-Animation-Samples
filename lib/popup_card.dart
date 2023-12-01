@@ -21,7 +21,7 @@ class MyPopupCard extends StatelessWidget {
       child: Hero(
         tag: 'popUpAnime',
         createRectTween: (begin, end) {
-          return CustomRectTween(begin: begin, end: end);
+          return CustomRectTween(begin: begin!, end: end!);
         },
         child: Material(
           color: Colors.teal,
@@ -100,7 +100,7 @@ class MyCard extends StatelessWidget {
       child: Hero(
         tag: 'CardAnime',
         createRectTween: (begin, end) {
-          return CustomRectTween(begin: begin, end: end);
+          return CustomRectTween(begin: begin!, end: end!);
         },
         child: Material(
           color: Colors.teal,
@@ -179,7 +179,7 @@ class MyOrangeCard extends StatelessWidget {
       child: Hero(
         tag: 'orangeCard',
         createRectTween: (begin, end) {
-          return CustomRectTween(begin: begin, end: end);
+          return CustomRectTween(begin: begin!, end: end!);
         },
         child: Material(
           color: Colors.orangeAccent,

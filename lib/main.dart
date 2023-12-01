@@ -42,12 +42,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.of(context)
                       .push(HeroDialogRoute(builder: (context) {
                     return NewCard();
-                  }));
+                  }, settings: RouteSettings()));
                 },
                 child: Hero(
                   tag: 'CardAnime',
                   createRectTween: (begin, end) {
-                    return CustomRectTween(begin: begin, end: end);
+                    return CustomRectTween(begin: begin!, end: end!);
                   },
                   child: Material(
                     color: Colors.teal,
@@ -94,12 +94,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     Navigator.of(context)
                         .push(HeroDialogRoute(builder: (context) {
                       return OrangeCard();
-                    }));
+                    }, settings: RouteSettings()));
                   },
                   child: Hero(
                     tag: 'orangeCard',
                     createRectTween: (begin, end) {
-                      return CustomRectTween(begin: begin, end: end);
+                      return CustomRectTween(begin: begin!, end: end!);
                     },
                     child: Material(
                       color: Colors.orangeAccent,

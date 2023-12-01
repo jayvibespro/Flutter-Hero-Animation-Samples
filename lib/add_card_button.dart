@@ -30,12 +30,12 @@ class _MyAddCardButtonState extends State<MyAddCardButton> {
         onTap: () {
           Navigator.of(context).push(HeroDialogRoute(builder: (context) {
             return PopupCard();
-          }));
+          }, settings: RouteSettings()));
         },
         child: Hero(
           tag: 'popUpAnime',
           createRectTween: (begin, end) {
-            return CustomRectTween(begin: begin, end: end);
+            return CustomRectTween(begin: begin!, end: end!);
           },
           child: Material(
             color: Colors.teal,
